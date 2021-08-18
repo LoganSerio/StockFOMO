@@ -4,6 +4,8 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import 'font-awesome/css/font-awesome.min.css';
 import { useState } from 'react';
 import 'primeflex/primeflex.css';
+import Banner from './Banner';
+import SearchBox from './SearchBox';
 
 const SearchPage = (props) => {
     const [searchQuery, setSearchQuery] = useState('');
@@ -14,10 +16,12 @@ const SearchPage = (props) => {
 
     return (
         <div>
-            <h1>Search</h1>
+            <Banner />
+            {/* <h2>Search</h2> */}
             <span>
-                <FontAwesomeIcon icon={faSearch} />
-                <InputText value={searchQuery} onChange={handleSearchBarChange}></InputText>
+                {/* <FontAwesomeIcon icon={faSearch} /> */}
+                {/* <InputText type='text' className='p-inputtext-lg' value={searchQuery} onChange={handleSearchBarChange}></InputText> */}
+                <SearchBox />
             </span>
         </div>
     );
