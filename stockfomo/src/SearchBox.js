@@ -17,9 +17,6 @@ const SearchBox = (props) => {
                 placeholder='Enter a ticker and get started...'
                 onChange={changeValue}
              />
-            {/* <form noValidate>
-                <input className='searchBox' label='Search'></input>
-            </form> */}
         </div>
     );
 };

@@ -6,6 +6,7 @@ import { useState } from 'react';
 import 'primeflex/primeflex.css';
 import Banner from './Banner';
 import SearchBox from './SearchBox';
+import DateBoxes from './DateBoxes';
 
 const SearchPage = (props) => {
     const [searchQuery, setSearchQuery] = useState('');
@@ -17,12 +18,8 @@ const SearchPage = (props) => {
     return (
         <div>
             <Banner />
-            {/* <h2>Search</h2> */}
-            <span>
-                {/* <FontAwesomeIcon icon={faSearch} /> */}
-                {/* <InputText type='text' className='p-inputtext-lg' value={searchQuery} onChange={handleSearchBarChange}></InputText> */}
-                <SearchBox />
-            </span>
+            <SearchBox />
+            <DateBoxes />
         </div>
     );
 };
