@@ -17,7 +17,9 @@ const DateBoxes = (props) => {
                         id='searchBox'
                         type="text"
                         value={startValue}
-                        placeholder='Enter start date poop'
+                        placeholder='Enter start date'
+                        onFocus={(e) => e.target.placeholder = ''}
+                        onBlur={(e) => e.target.placeholder = 'Enter start date'}
                         onChange={changeStartValue}
                     />
                 </div>
@@ -27,6 +29,8 @@ const DateBoxes = (props) => {
                         type="text"
                         value={endValue}
                         placeholder='Enter end date'
+                        onFocus={(e) => e.target.placeholder = ''}
+                        onBlur={(e) => e.target.placeholder = 'Enter end date'}
                         onChange={changeEndValue}
                     />
                 </div>

@@ -7,6 +7,7 @@ import 'primeflex/primeflex.css';
 import Banner from './Banner';
 import SearchBox from './SearchBox';
 import DateBoxes from './DateBoxes';
+import SubmitButton from './SubmitButton';
 
 const SearchPage = (props) => {
     const [searchQuery, setSearchQuery] = useState('');
@@ -20,6 +21,7 @@ const SearchPage = (props) => {
             <Banner />
             <SearchBox />
             <DateBoxes />
+            <SubmitButton />
         </div>
     );
 };

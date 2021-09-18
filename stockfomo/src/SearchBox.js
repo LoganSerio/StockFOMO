@@ -15,6 +15,8 @@ const SearchBox = (props) => {
                 type="text"
                 value={value}
                 placeholder='Enter a ticker and get started...'
+                onFocus={(e) => e.target.placeholder = ''}
+                onBlur={(e) => e.target.placeholder = 'Enter a ticker and get started...'}
                 onChange={changeValue}
              />
         </div>
