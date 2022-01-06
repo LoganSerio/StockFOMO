@@ -1,6 +1,6 @@
 import './App.css';
 import 'font-awesome/css/font-awesome.min.css';
-import SearchPage from './SearchPage';
+import SearchPage from './HomePage/SearchPage';
 const App = (props) => {
   return (
     <div className="App">
