@@ -8,6 +8,9 @@ import Banner from './Banner';
 import SearchBox from './SearchBox';
 import DateBoxes from './DateBoxes';
 import SubmitButton from './SubmitButton';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
 
 const SearchPage = (props) => {
     const [searchQuery, setSearchQuery] = useState('');
@@ -17,12 +20,22 @@ const SearchPage = (props) => {
     };
 
     return (
-        <div>
-            <Banner />
-            <SearchBox />
-            <DateBoxes />
-            <SubmitButton />
-        </div>
+        <motion.div 
+            initial={{ x: -1000 }} 
+            animate={{ x: 0 }} 
+            exit={{ x: -1000 }}
+            transition={{ duration: 0.5 }}
+        >
+            <div>
+                <Banner />
+                <SearchBox />
+                <DateBoxes />
+                <SubmitButton />
+                {/* <Link to='resultspage'>
+                    Go to Page 2
+                </Link> */}
+            </div>
+        </motion.div>
     );
 };
 export default SearchPage;
