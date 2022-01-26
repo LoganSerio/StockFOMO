@@ -4,9 +4,16 @@ import SearchPage from './HomePage/SearchPage';
 import Page2 from './ResultsPage/Page2';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
+import { useState } from 'react';
 
 const App = (props) => {
+  const [searchQuery, setSearchQuery] = useState();
   const location = useLocation();
+
+  const searchSubmit = (tickerValue) => {
+    setSearchQuery = {}
+  }
+ 
   return (
     <div className="App">
       <body className='App-body'>

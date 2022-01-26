@@ -7,7 +7,7 @@ const Page2 = () => {
         initial={{ x: 1000 }} 
         animate={{ x: 0 }} 
         exit={{ x: 1000 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.3 }}
         >
             <div>
                 <p>This is page 2</p>

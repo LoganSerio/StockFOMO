@@ -7,6 +7,7 @@ const SearchBox = (props) => {
 
     const changeValue = e => {
         setValue(e.target.value);
+        props.updateTicker(e.target.value);
     }
     return (
         <div className='field'>

@@ -13,10 +13,10 @@ import { motion } from 'framer-motion';
 
 
 const SearchPage = (props) => {
-    const [searchQuery, setSearchQuery] = useState('');
+    const [ticker, setTicker] = useState('');
 
-    const handleSearchBarChange = e => {
-        setSearchQuery(e.target.value);
+    const handleSearchBarChange = updatedQuery => {
+        setTicker(updatedQuery);
     };
 
     return (
@@ -24,11 +24,11 @@ const SearchPage = (props) => {
             initial={{ x: -1000 }} 
             animate={{ x: 0 }} 
             exit={{ x: -1000 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.3 }}
         >
             <div>
                 <Banner />
-                <SearchBox />
+                <SearchBox updateTicker={handleSearchBarChange} />
                 <DateBoxes />
                 <SubmitButton />
                 {/* <Link to='resultspage'>
